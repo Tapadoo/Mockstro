@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
 )
 
 func (s *Store) validateMessage(stub *ojson.Object, name, file string) error {

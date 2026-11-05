@@ -14,9 +14,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fsx"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fsx"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 // Artifact is a run-owned snapshot of an APK or iOS Simulator bundle. Source

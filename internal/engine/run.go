@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/build"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/lock"
-	"github.com/feernandooff/mockstro/internal/registry"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/build"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/lock"
+	"github.com/Tapadoo/Mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // Run owns one device, one port and one WireMock for its lifetime. A single-device session is

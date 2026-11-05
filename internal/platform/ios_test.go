@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func TestEnsureBootedRespectsHeadlessOnRunningSimulator(t *testing.T) {

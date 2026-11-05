@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func TestInitScaffoldValidates(t *testing.T) {

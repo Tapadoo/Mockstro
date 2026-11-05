@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/mockruntime"
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // ResolveMockTarget interprets `mock [scenario|profile|flow [stub...]]`.

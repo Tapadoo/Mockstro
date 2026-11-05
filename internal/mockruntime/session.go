@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 var ErrStopped = errors.New("mock session is stopped")

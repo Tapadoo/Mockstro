@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/gitrepo"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/gitrepo"
 )
 
 func gitFailure(kind error, stderr string) error {

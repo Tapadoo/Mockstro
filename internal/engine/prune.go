@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/lock"
-	"github.com/feernandooff/mockstro/internal/paths"
-	"github.com/feernandooff/mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/lock"
+	"github.com/Tapadoo/Mockstro/internal/paths"
+	"github.com/Tapadoo/Mockstro/internal/registry"
 )
 
 // DefaultKeepRuns is how many finished run dirs a project keeps (MOCKSTRO_KEEP_RUNS overrides).

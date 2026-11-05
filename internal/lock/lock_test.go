@@ -9,7 +9,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 // fakePS answers `ps` for our own pid (live) and reports pid 999999 as gone.

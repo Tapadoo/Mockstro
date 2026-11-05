@@ -8,11 +8,11 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/lock"
-	"github.com/feernandooff/mockstro/internal/paths"
-	"github.com/feernandooff/mockstro/internal/platform"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/lock"
+	"github.com/Tapadoo/Mockstro/internal/paths"
+	"github.com/Tapadoo/Mockstro/internal/platform"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // Device rules:

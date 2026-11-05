@@ -12,10 +12,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/gitrepo"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/gitrepo"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 // gitIn runs git in dir with the user's own configuration kept out of the way.

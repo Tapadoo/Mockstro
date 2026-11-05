@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/build"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/build"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func TestBuildersUseTargetCheckoutInsteadOfSuite(t *testing.T) {

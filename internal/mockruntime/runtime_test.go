@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 type testRuntime struct {

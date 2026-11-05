@@ -4,7 +4,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func TestFeatureTagsUseOnlyFixtureTagsAndExplicitKeyMetadata(t *testing.T) {

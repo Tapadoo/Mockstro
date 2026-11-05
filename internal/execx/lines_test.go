@@ -9,7 +9,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func TestLinesTeeChunksProgressAndFlush(t *testing.T) {

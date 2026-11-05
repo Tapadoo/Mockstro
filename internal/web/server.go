@@ -26,12 +26,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/mockruntime"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/workspacecoord"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/workspacecoord"
 )
 
 //go:embed static/index.html

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
 )
 
 func TestJSONBodyIsCheckedAgainstContentType(t *testing.T) {

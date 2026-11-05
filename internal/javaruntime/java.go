@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 const Hint = "install Java 17+ or install Homebrew and rerun setup"

@@ -7,7 +7,8 @@ The [installer](../README.md#quickstart) creates `mockstro.yaml` when it's missi
 running `init` with any flags you pass:
 
 ```bash
-sh install.sh v0.1.0-rc.3 --android-app-id com.example.android --ios-app-id com.example.ios \
+curl -fsSL https://github.com/Tapadoo/Mockstro/releases/latest/download/install.sh | sh -s -- \
+  --android-app-id com.example.android --ios-app-id com.example.ios \
   --android-project ../android-app --ios-project ../ios-app --integration full
 ```
 
@@ -17,7 +18,7 @@ This creates a config, a starter smoke flow, and ignores `mockstro.local.yaml` a
 ## mockstro.yaml
 
 ```yaml
-cliVersion: v0.1.0-rc.3          # release used by ./mockstrow
+cliVersion: v0.1.0               # release used by ./mockstrow
 env:
   TEST_USER: demo
 platforms:

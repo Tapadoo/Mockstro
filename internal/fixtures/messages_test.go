@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
 )
 
 func message(t *testing.T, body string) *ojson.Object {

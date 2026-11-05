@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/feernandooff/mockstro/internal/cli"
-	"github.com/feernandooff/mockstro/internal/tui"
+	"github.com/Tapadoo/Mockstro/internal/cli"
+	"github.com/Tapadoo/Mockstro/internal/tui"
 )
 
 var version = "dev"

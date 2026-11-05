@@ -7,7 +7,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
 )
 
 // historySamples caps how many past durations per flow feed its estimate.

@@ -13,14 +13,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/maestro"
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/platform"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/platform"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // BuildMappings layers overrides (priority 1), the profile (3) and shared defaults (5).

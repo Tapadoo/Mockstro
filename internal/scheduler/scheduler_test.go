@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/scheduler"
+	"github.com/Tapadoo/Mockstro/internal/scheduler"
 )
 
 type worker struct {

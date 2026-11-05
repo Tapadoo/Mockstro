@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
 )
 
 type State string

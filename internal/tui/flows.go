@@ -9,7 +9,7 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/feernandooff/mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
 )
 
 // flowsModel: a tag menu beside a filterable, multi-select flow picker grouped by feature.

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/javaruntime"
-	"github.com/feernandooff/mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/javaruntime"
+	"github.com/Tapadoo/Mockstro/internal/maestro"
 )
 
 const javaInstallHint = javaruntime.Hint

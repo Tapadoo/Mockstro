@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/registry"
 )
 
 var iosEnvKeys = []string{"E2E_API_URL", "E2E_RUN_ID", "E2E_REMOTE_CONFIG", "E2E_EXPIRES_AT", "E2E_WEBSOCKET_URL"}

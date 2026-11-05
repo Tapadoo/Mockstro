@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	maestroexec "github.com/feernandooff/mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	maestroexec "github.com/Tapadoo/Mockstro/internal/maestro"
 )
 
 func TestMaestroSetupReusesExistingInstall(t *testing.T) {

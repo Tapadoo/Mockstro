@@ -1,13 +1,18 @@
 #!/bin/sh
 # Add mockstro to a project without a global CLI or Go installation. Extra flags
 # go to init, which creates .maestro/mockstro.yaml when it's missing.
+# The braces make sh read the whole script before running it, so `curl | sh` is safe.
+{
 set -eu
+release_version=
 fail() { echo "mockstro installer: $*" >&2; exit 1; }
-usage() { echo 'Usage: sh install.sh vX.Y.Z [-C project-directory] [init flags, e.g. --android-app-id com.example.app]'; }
+usage() { echo 'Usage: sh install.sh [vX.Y.Z] [-C project-directory] [init flags, e.g. --android-app-id com.example.app]'; }
 if [ "${1:-}" = --help ]; then usage; exit 0; fi
-[ "$#" -ge 1 ] || { usage >&2; exit 1; }
-version=$1
-shift
+case "${1:--}" in
+    -*) version=$release_version ;;
+    *) version=$1; shift ;;
+esac
+[ -n "$version" ] || { usage >&2; exit 1; }
 dir=.
 if [ "${1:-}" = -C ]; then
     [ "$#" -ge 2 ] || { usage >&2; exit 1; }
@@ -32,7 +37,7 @@ tmp=$(mktemp -d "${TMPDIR:-/tmp}/mockstro-install.XXXXXX")
 trap 'rm -rf "$tmp"' EXIT
 trap 'exit 130' INT
 trap 'exit 143' TERM HUP
-url=https://github.com/FeernandoOFF/mockstro/releases/download/$version
+url=https://github.com/Tapadoo/Mockstro/releases/download/$version
 fetch() {
     curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' \
         --connect-timeout 15 --max-time 300 --output "$tmp/$1" "$url/$1" ||
@@ -47,4 +52,12 @@ chmod 755 "$tmp/mockstrow"
 # The released wrapper is the single CLI downloader; init does the rest.
 mkdir "$tmp/.maestro"
 printf 'cliVersion: %s\n' "$version" > "$tmp/.maestro/mockstro.yaml"
-"$tmp/mockstrow" -C "$project" init --cli-version "$version" "$@"
+# Under `curl | sh`, stdin is the script; prompt on the terminal instead.
+if [ -t 0 ]; then
+    "$tmp/mockstrow" -C "$project" init --cli-version "$version" "$@"
+elif (: </dev/tty) 2>/dev/null; then
+    "$tmp/mockstrow" -C "$project" init --cli-version "$version" "$@" </dev/tty
+else
+    "$tmp/mockstrow" -C "$project" init --cli-version "$version" "$@" </dev/null
+fi
+}

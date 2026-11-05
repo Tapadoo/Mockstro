@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/bootstrap"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/bootstrap"
+	"github.com/Tapadoo/Mockstro/internal/project"
 	"github.com/mattn/go-isatty"
 	"github.com/spf13/cobra"
 )

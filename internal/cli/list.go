@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
 )
 
 func listCmd(g *globals, f *runFlags, args []string) error {

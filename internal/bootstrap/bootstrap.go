@@ -8,8 +8,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/skills"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/skills"
 )
 
 //go:embed mockstrow

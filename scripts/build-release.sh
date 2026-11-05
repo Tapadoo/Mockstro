@@ -16,7 +16,12 @@ for os in darwin linux; do
     done
 done
 cp internal/bootstrap/mockstrow "$out/mockstrow"
-cp scripts/install.sh scripts/install-global.sh scripts/install-ui-launcher.sh "$out/"
+cp scripts/install-ui-launcher.sh "$out/"
+# Released installers default to their own version, so `releases/latest/download/install.sh | sh` works.
+for script in install.sh install-global.sh; do
+    sed "s/^release_version=\$/release_version=$version/" "scripts/$script" > "$out/$script"
+    grep -q "^release_version=$version\$" "$out/$script" || { echo "cannot embed version in $script" >&2; exit 1; }
+done
 chmod 755 "$out/mockstrow" "$out"/install*.sh
 (cd "$out"; if command -v sha256sum >/dev/null 2>&1; then
     sha256sum mockstro* install*.sh > checksums.txt

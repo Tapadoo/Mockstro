@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 func entriesOf(t *testing.T, m map[string]any) map[string]any {
