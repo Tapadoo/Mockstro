@@ -17,7 +17,7 @@ the result. There's a CLI for scripts, agents and CI, and a TUI for people.
 
 ## Quickstart
 
-Current release candidate: [v0.1.0-rc.6](https://github.com/Tapadoo/Mockstro/releases/tag/v0.1.0-rc.6).
+Latest release: [v0.1.0](https://github.com/Tapadoo/Mockstro/releases/tag/v0.1.0).
 Prebuilt binaries support macOS and Linux on Apple Silicon/ARM64 and Intel/AMD64;
 Go is not required.
 
@@ -30,15 +30,14 @@ use the [browser UI](docs/web-ui.md) install one global CLI and a desktop shortc
 From your app repo:
 
 ```bash
-version=v0.1.0-rc.6
-curl -fsSLo install.sh "https://github.com/Tapadoo/Mockstro/releases/download/$version/install.sh"
-sh install.sh "$version" && rm install.sh
+curl -fsSL https://github.com/Tapadoo/Mockstro/releases/latest/download/install.sh | sh
 ```
 
 This adds `./mockstrow` and pins the version in `.maestro/mockstro.yaml`. If that file
 doesn't exist yet, it asks for your app IDs and creates a starter suite; existing
 `.maestro` files are kept. You can pass them instead:
-`sh install.sh "$version" --android-app-id com.example.app --ios-app-id com.example.ios`.
+`curl -fsSL …/install.sh | sh -s -- --android-app-id com.example.app --ios-app-id com.example.ios`.
+To install a specific version, replace `latest/download` with `download/v0.1.0`.
 
 Commit `mockstrow` and `.maestro/`. Then anyone who clones the repo runs:
 
@@ -57,7 +56,7 @@ Maestro 2.11+ is recommended.
 To upgrade an existing project, set the top-level pin in `.maestro/mockstro.yaml`:
 
 ```yaml
-cliVersion: v0.1.0-rc.6
+cliVersion: v0.1.0
 ```
 
 Then run `./mockstrow --version` and `./mockstrow check`; the wrapper downloads and
@@ -71,9 +70,7 @@ Optional: `./mockstrow skill install --claude` adds an agent skill.
 Once, on a Mac:
 
 ```bash
-version=v0.1.0-rc.6
-curl -fsSLo install-global.sh "https://github.com/Tapadoo/Mockstro/releases/download/$version/install-global.sh"
-sh install-global.sh "$version" && rm install-global.sh
+curl -fsSL https://github.com/Tapadoo/Mockstro/releases/latest/download/install-global.sh | sh
 ```
 
 This installs `mockstro` to `~/.local/bin` (`BIN_DIR` changes it) and creates
@@ -82,10 +79,10 @@ under **Clone from Git** (or choose a folder you already cloned); the page remem
 lists other projects you open. A project without `.maestro/mockstro.yaml` still opens if its
 `.maestro` folder has flows or mocks; the page serves it as a [lite](#lite-or-full) project.
 **Setup check** on the
-page says what else is missing. Rerun these commands to update an existing global
+page says what else is missing. Rerun the command to update an existing global
 installation. To check its version, run `~/.local/bin/mockstro --version` (or use your
-custom `BIN_DIR`). On Linux, or for a CLI-only macOS install, use
-`sh install-global.sh "$version" --no-launcher` before removing the installer.
+custom `BIN_DIR`). On Linux, or for a CLI-only macOS install, append
+`-s -- --no-launcher` to `sh`.
 
 Both installers look for a working Java 17+ on `PATH`, in `JAVA_HOME`, and in common
 JDK locations (macOS JavaVirtualMachines, Homebrew, Linux JVM directories, Android

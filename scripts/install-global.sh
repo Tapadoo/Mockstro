@@ -1,13 +1,19 @@
 #!/bin/sh
 # Install a global mockstro CLI and, on macOS, the Mockstro.app launcher. Rerun to update.
+# The braces make sh read the whole script before running it, so `curl | sh` is safe.
+{
 set -eu
+release_version=
 fail() { echo "mockstro installer: $*" >&2; exit 1; }
-usage() { echo 'Usage: sh install-global.sh vX.Y.Z [--no-launcher]'; }
+usage() { echo 'Usage: sh install-global.sh [vX.Y.Z] [--no-launcher]'; }
 if [ "${1:-}" = --help ]; then usage; exit 0; fi
-[ "$#" -ge 1 ] && [ "$#" -le 2 ] || { usage >&2; exit 1; }
-version=$1
+case "${1:--}" in
+    -*) version=$release_version ;;
+    *) version=$1; shift ;;
+esac
+[ -n "$version" ] && [ "$#" -le 1 ] || { usage >&2; exit 1; }
 launcher=yes
-case "${2:-}" in
+case "${1:-}" in
     "") ;;
     --no-launcher) launcher=no ;;
     *) usage >&2; exit 1 ;;
@@ -64,7 +70,7 @@ chmod 755 "$tmp/$asset"
     trap 'exit 130' INT
     trap 'exit 143' TERM HUP
     cd "$check_dir"
-    "$tmp/$asset" check --install
+    if [ -t 0 ]; then "$tmp/$asset" check --install; else "$tmp/$asset" check --install </dev/null; fi
 )
 # Same-filesystem rename: a running mockstro keeps its old file.
 mv -f "$tmp/$asset" "$bin_dir/mockstro"
@@ -74,4 +80,5 @@ case ":$PATH:" in
     *) echo "Add $bin_dir to your PATH to run mockstro from a terminal, e.g. in ~/.zshrc:"
        echo "  export PATH=\"$bin_dir:\$PATH\"" ;;
 esac
-[ "$launcher" = no ] || sh "$tmp/install-ui-launcher.sh" "$bin_dir/mockstro"
+[ "$launcher" = no ] || sh "$tmp/install-ui-launcher.sh" "$bin_dir/mockstro" </dev/null
+}

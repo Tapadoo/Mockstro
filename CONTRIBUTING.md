@@ -26,7 +26,8 @@ cd /path/to/your/app
 
 Push a tag such as `v0.2.0` or `v0.2.0-rc.1`. The release workflow tests, builds the
 macOS/Linux binaries, `mockstrow`, the install scripts and `checksums.txt`, and publishes a
-GitHub release (a prerelease for `-rc` tags). `scripts/build-release.sh vX.Y.Z` builds
+GitHub release (a prerelease for `-rc` tags). Released installers default to their own
+version, so `releases/latest/download/install.sh` always installs the latest stable release. `scripts/build-release.sh vX.Y.Z` builds
 the same files locally into `dist/`.
 
 The skill is embedded from `skills/mockstro/`; the wrapper is `internal/bootstrap/mockstrow`.

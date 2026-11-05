@@ -93,6 +93,20 @@ cp "$ASSETS/${3##*/}" "$2"
 	if err != nil || !strings.Contains(out, want+"<--android-app-id>\n<com.example.app>\n") {
 		t.Fatalf("lost init flags: %q, %v", out, err)
 	}
+	if out, err := run("-C", "0"); err == nil || !strings.Contains(out, "Usage") {
+		t.Fatalf("unreleased installer accepted no version: %q, %v", out, err)
+	}
+	// A released installer embeds its version and runs from `curl | sh`.
+	script, _ := os.ReadFile(installer)
+	released := strings.Replace(string(script), "\nrelease_version=\n", "\nrelease_version=v0.1.0-rc.1\n", 1)
+	cmd := exec.Command("sh", "-s", "--", "-C", project, "--android-app-id", "com.example.app")
+	cmd.Stdin = strings.NewReader(released)
+	cmd.Env = append(os.Environ(), "PATH="+bin+":"+os.Getenv("PATH"), "ASSETS="+assets,
+		"MOCKSTRO_CACHE_DIR="+filepath.Join(root, "cache"), "CLI_EXIT=0")
+	piped, err := cmd.CombinedOutput()
+	if err != nil || !strings.Contains(string(piped), want+"<--android-app-id>\n<com.example.app>\n") {
+		t.Fatalf("piped install failed: %q, %v", piped, err)
+	}
 }
 
 func TestGlobalInstaller(t *testing.T) {
@@ -186,6 +200,17 @@ if [ "${JAVA_SETUP_FAIL:-}" = yes ]; then exit 23; fi
 		t.Fatalf("ignored Java setup failure: %q, %v", out, err)
 	}
 	t.Setenv("JAVA_SETUP_FAIL", "")
+	if out, err := run("--no-launcher"); err == nil || !strings.Contains(out, "Usage") {
+		t.Fatalf("unreleased installer accepted no version: %q, %v", out, err)
+	}
+	script, _ := os.ReadFile(installer)
+	released := strings.Replace(string(script), "\nrelease_version=\n", "\nrelease_version=v0.1.0\n", 1)
+	cmd := exec.Command("sh", "-s", "--", "--no-launcher")
+	cmd.Stdin = strings.NewReader(released)
+	cmd.Env = append(os.Environ(), "PATH="+fakes+":"+os.Getenv("PATH"), "ASSETS="+assets, "BIN_DIR="+binDir)
+	if piped, err := cmd.CombinedOutput(); err != nil || !strings.Contains(string(piped), "Installed mockstro v0.1.0") {
+		t.Fatalf("piped install failed: %q, %v", piped, err)
+	}
 	for _, version := range []string{"latest", "v0.1.0/other"} {
 		if out, err := run(version); err == nil {
 			t.Fatalf("accepted %q: %s", version, out)
