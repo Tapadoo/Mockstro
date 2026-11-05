@@ -17,7 +17,7 @@ the result. There's a CLI for scripts, agents and CI, and a TUI for people.
 
 ## Quickstart
 
-Current release candidate: [v0.1.0-rc.6](https://github.com/FeernandoOFF/mockstro/releases/tag/v0.1.0-rc.6).
+Current release candidate: [v0.1.0-rc.6](https://github.com/Tapadoo/Mockstro/releases/tag/v0.1.0-rc.6).
 Prebuilt binaries support macOS and Linux on Apple Silicon/ARM64 and Intel/AMD64;
 Go is not required.
 
@@ -31,7 +31,7 @@ From your app repo:
 
 ```bash
 version=v0.1.0-rc.6
-curl -fsSLo install.sh "https://github.com/FeernandoOFF/mockstro/releases/download/$version/install.sh"
+curl -fsSLo install.sh "https://github.com/Tapadoo/Mockstro/releases/download/$version/install.sh"
 sh install.sh "$version" && rm install.sh
 ```
 
@@ -72,7 +72,7 @@ Once, on a Mac:
 
 ```bash
 version=v0.1.0-rc.6
-curl -fsSLo install-global.sh "https://github.com/FeernandoOFF/mockstro/releases/download/$version/install-global.sh"
+curl -fsSLo install-global.sh "https://github.com/Tapadoo/Mockstro/releases/download/$version/install-global.sh"
 sh install-global.sh "$version" && rm install-global.sh
 ```
 

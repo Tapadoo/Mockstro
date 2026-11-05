@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/build"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/fsx"
-	"github.com/feernandooff/mockstro/internal/scheduler"
+	"github.com/Tapadoo/Mockstro/internal/build"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/fsx"
+	"github.com/Tapadoo/Mockstro/internal/scheduler"
 )
 
 // Run executes the selected flows, single-device or parallel, and always returns a summary

@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func TestStartPreservesCommandIOEnvAndDirectory(t *testing.T) {

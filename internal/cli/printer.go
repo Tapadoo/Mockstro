@@ -9,8 +9,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 // Printer renders engine events as plain text for terminals, agents and logs.

@@ -12,9 +12,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/maestro"
 )
 
 func executor(t *testing.T) (*maestro.Executor, maestro.Flow, *execx.Fake) {

@@ -10,8 +10,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 const RemoveMarker = "__remove__"

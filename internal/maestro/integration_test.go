@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/maestro"
 )
 
 // Opt in with an explicit disposable Android emulator; no application is launched.

@@ -64,7 +64,7 @@ if ! valid; then
     trap 'exit 130' INT
     trap 'exit 143' TERM HUP
     asset=mockstro_${version}_${os}_${arch}
-    url=https://github.com/FeernandoOFF/mockstro/releases/download/$version
+    url=https://github.com/Tapadoo/Mockstro/releases/download/$version
     echo "mockstrow: downloading $version ($os/$arch)" >&2
     fetch() {
         curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' \

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/feernandooff/mockstro/internal/bootstrap"
+	"github.com/Tapadoo/Mockstro/internal/bootstrap"
 	"github.com/spf13/cobra"
 )
 

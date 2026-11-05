@@ -10,11 +10,11 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/platform"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/platform"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func TestDashboardAgentEmulatorsSortFirstAndKeepSelection(t *testing.T) {

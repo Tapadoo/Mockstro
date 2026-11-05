@@ -11,16 +11,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/build"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/lock"
-	"github.com/feernandooff/mockstro/internal/maestro"
-	"github.com/feernandooff/mockstro/internal/paths"
-	"github.com/feernandooff/mockstro/internal/platform"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/registry"
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/build"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/lock"
+	"github.com/Tapadoo/Mockstro/internal/maestro"
+	"github.com/Tapadoo/Mockstro/internal/paths"
+	"github.com/Tapadoo/Mockstro/internal/platform"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
 )
 
 type Options struct {

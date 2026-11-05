@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func localStore(t *testing.T) *Store {

@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fsx"
-	"github.com/feernandooff/mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fsx"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
 )
 
 func mapping(t *testing.T, raw string) any {

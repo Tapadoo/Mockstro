@@ -10,7 +10,7 @@ import (
 	"github.com/atotto/clipboard"
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/feernandooff/mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/engine"
 )
 
 type editorDoneMsg struct {

@@ -11,9 +11,9 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/paths"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/paths"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 // dashModel: devices, bootable AVDs/simulators, active runs across every project, activity.

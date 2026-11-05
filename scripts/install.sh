@@ -32,7 +32,7 @@ tmp=$(mktemp -d "${TMPDIR:-/tmp}/mockstro-install.XXXXXX")
 trap 'rm -rf "$tmp"' EXIT
 trap 'exit 130' INT
 trap 'exit 143' TERM HUP
-url=https://github.com/FeernandoOFF/mockstro/releases/download/$version
+url=https://github.com/Tapadoo/Mockstro/releases/download/$version
 fetch() {
     curl --fail --silent --show-error --location --proto '=https' --proto-redir '=https' \
         --connect-timeout 15 --max-time 300 --output "$tmp/$1" "$url/$1" ||

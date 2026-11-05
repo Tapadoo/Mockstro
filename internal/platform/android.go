@@ -14,10 +14,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/registry"
 )
 
 type Android struct {

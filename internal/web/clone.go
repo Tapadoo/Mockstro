@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/gitrepo"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/gitrepo"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 // Guide is a help page the page links to when a clone fails.

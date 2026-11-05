@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
 )
 
 // checkBodyMatchesContentType makes a JSON response valid JSON and fills in the Content-Type

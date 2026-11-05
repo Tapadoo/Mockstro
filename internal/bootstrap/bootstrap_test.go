@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 const testSuite = "# keep suite comment\nplatforms:\n  android:\n    appId: example.android # keep app comment\n    integration: full\n    devices: [Agent_AVD]\n"

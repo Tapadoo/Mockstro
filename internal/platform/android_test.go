@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func TestDevicesKeepsWirelessSerials(t *testing.T) {

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/mockruntime"
-	"github.com/feernandooff/mockstro/internal/platform"
-	"github.com/feernandooff/mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/platform"
+	"github.com/Tapadoo/Mockstro/internal/project"
 )
 
 func TestRemoteConfigDeliverySelectsAttachedOverrideOnly(t *testing.T) {

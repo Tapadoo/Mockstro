@@ -7,7 +7,7 @@ import (
 	"maps"
 	"regexp"
 
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 const (

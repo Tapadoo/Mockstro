@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/javaruntime"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/javaruntime"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // Check is one line of the page's setup panel.

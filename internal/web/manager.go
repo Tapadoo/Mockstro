@@ -7,13 +7,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/engine"
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
-	"github.com/feernandooff/mockstro/internal/mockapp"
-	"github.com/feernandooff/mockstro/internal/mockruntime"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/engine"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/mockapp"
+	"github.com/Tapadoo/Mockstro/internal/mockruntime"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 )
 
 // State is what the page shows in its status pill.

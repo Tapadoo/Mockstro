@@ -17,10 +17,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/paths"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/registry"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/paths"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/registry"
 )
 
 type Device struct {

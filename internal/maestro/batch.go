@@ -14,8 +14,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fixtures"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fixtures"
 )
 
 const batchHookJS = `var r = http.post(MOCKSTRO_URL + '/' + MOCKSTRO_ACTION + '?flow=' + encodeURIComponent(MOCKSTRO_FLOW), {body: ''})

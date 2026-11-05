@@ -15,7 +15,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 type Owner struct {

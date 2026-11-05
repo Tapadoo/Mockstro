@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/gitrepo"
-	"github.com/feernandooff/mockstro/internal/workspacecoord"
+	"github.com/Tapadoo/Mockstro/internal/gitrepo"
+	"github.com/Tapadoo/Mockstro/internal/workspacecoord"
 )
 
 const gitTimeout = 60 * time.Second

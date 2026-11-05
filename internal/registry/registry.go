@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/feernandooff/mockstro/internal/execx"
-	"github.com/feernandooff/mockstro/internal/fsx"
-	"github.com/feernandooff/mockstro/internal/lock"
+	"github.com/Tapadoo/Mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/fsx"
+	"github.com/Tapadoo/Mockstro/internal/lock"
 )
 
 type Artifact struct {

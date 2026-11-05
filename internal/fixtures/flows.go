@@ -12,9 +12,9 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/feernandooff/mockstro/internal/ojson"
-	"github.com/feernandooff/mockstro/internal/project"
-	"github.com/feernandooff/mockstro/internal/remoteconfig"
+	"github.com/Tapadoo/Mockstro/internal/ojson"
+	"github.com/Tapadoo/Mockstro/internal/project"
+	"github.com/Tapadoo/Mockstro/internal/remoteconfig"
 )
 
 // Verification asserts how often a named stub was matched during one flow.

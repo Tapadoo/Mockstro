@@ -1,4 +1,4 @@
-module github.com/feernandooff/mockstro
+module github.com/Tapadoo/Mockstro
 
 go 1.25.6
 

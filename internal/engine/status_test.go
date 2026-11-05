@@ -5,7 +5,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func TestStatusListsUndesignatedStoppedEmulators(t *testing.T) {

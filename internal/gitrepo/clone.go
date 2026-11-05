@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 var (

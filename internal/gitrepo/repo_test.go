@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 func git(t *testing.T, dir string, args ...string) string {

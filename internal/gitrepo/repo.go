@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/execx"
+	"github.com/Tapadoo/Mockstro/internal/execx"
 )
 
 const (

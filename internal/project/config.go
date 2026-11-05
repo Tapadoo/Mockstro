@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/feernandooff/mockstro/internal/wiremock"
+	"github.com/Tapadoo/Mockstro/internal/wiremock"
 	"gopkg.in/yaml.v3"
 )
 
